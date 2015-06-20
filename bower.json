@@ -1,0 +1,21 @@
+{
+  "name": "Alpha-of-Genesis",
+  "version": "0.0.1",
+  "authors": [
+    "James Rauhut <jamesrauhut@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "seejamescode.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "*"
+  }
+}

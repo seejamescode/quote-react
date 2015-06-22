@@ -1,7 +1,15 @@
 $subtle-color: #30162B;
 $attention-color: #3FB094;
 $dull-color: #BCCF9F;
+$link-color: #F5F2C4;
 $title-font: 'Pacifico', cursive;
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
 
 body {
   background-color: $subtle-color;
@@ -13,9 +21,17 @@ h1 {
     color: $attention-color;
 }
 
+.page-wrap {
+    min-height: calc(100% - 2.5em);
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
 header {
     width: 100%;
-    height: 30%;
     text-align: center;
 
     * {
@@ -26,6 +42,10 @@ header {
         font-family: $title-font;
         font-size: 6em;
         margin-left: -2%;
+
+        span {
+            cursor: pointer;
+        }
     }
 
     @media (max-width: 550px) {
@@ -35,29 +55,84 @@ header {
 
 #wrapMain {
     display: flex;
-    position: absolute;
-    height: 70%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-top: -3.5em;
     width: 90%;
     padding: 0 5%;
-    align-items: center;
-    flex-flow: row wrap;
+
+    .firstRow {
+        margin: 0 1em;
+    }
 
     #wrapGif {
-        display: flex;
-        flex: 1 auto;
-        order: 2;
-        justify-content: center;
+        position: relative;
+        margin-top: 7em;
 
-        img {
+        #gif {
             padding: 10px;
             border-radius: 5%;
             background: $attention-color;
+            width: 93%;
+        }
+
+        #ears {
+            height: 7em;
+            width: 10em;
+            margin-top: -5.5em;
+            left: calc(50% - 3.5em);
+            z-index: 0;
+            position: absolute;
         }
     }
 
     #wrapQuote {
-        flex: 1 auto;
-        order: 2;
         text-align: center;
+        margin-top: 7em;
+    }
+
+    #nextAction {
+        flex: 1 auto;
+        order: 3;
+        width: 100%;
+        margin: 1em 0;
+        align-items: center;
+        flex-flow: row wrap;
+        text-align: center;
+
+        button {
+            flex: 1 auto;
+            height: 6.5em;
+            width: 6.5em;
+            font-size: 1em;
+            text-align: center;
+            font-weight: 600;
+            text-align: center;
+            background-color: Transparent;
+            border: $attention-color solid 4px;
+            color: $attention-color;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 25%;
+        }
+
+        button:hover {
+            color: $subtle-color;
+            background-color: $attention-color;
+        }
+    }
+}
+
+footer {
+    height: 1em;
+    margin-top: 1em;
+    text-align: center;
+
+    a {
+        color: $link-color;
+        text-decoration: none;
+        text-transform: uppercase;
     }
 }

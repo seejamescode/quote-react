@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var quoteReceived = false;
+    var giphyKey = "3oEduIQVh382PMPOfe";
 
     if(!window.location.hash) {
         document.location = document.location + "#?";
@@ -28,7 +29,7 @@ $(document).ready(function () {
 
     var getNewGif = function() {
             $.ajax({
-            url: "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=reaction", // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
+            url: "http://api.giphy.com/v1/gifs/random?api_key=" + giphyKey + "&tag=reaction", // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
             type: 'GET', // The HTTP Method
             datatype: 'json',
             success: function (data) {
@@ -80,7 +81,7 @@ $(document).ready(function () {
     }
 
     if (existingGif) {
-        gifURL = "http://api.giphy.com/v1/gifs/" + existingGif + "?api_key=dc6zaTOxFJmzC";
+        gifURL = "http://api.giphy.com/v1/gifs/" + existingGif + "?api_key=" + giphyKey;
         getExistingGif(gifURL);
     } else {
         getNewGif();

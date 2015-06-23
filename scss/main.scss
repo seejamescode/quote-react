@@ -105,10 +105,9 @@ header {
         button {
             flex: 1 auto;
             height: 6.5em;
-            width: 6.5em;
-            font-size: 1em;
+            min-width: 6.5em;
             text-align: center;
-            font-weight: 600;
+            font-weight: 900;
             text-align: center;
             background-color: Transparent;
             border: $attention-color solid 4px;

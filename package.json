@@ -1,26 +1,25 @@
 {
-    "name": "QuoteReact",
-    "version": "0.0.1",
-    "description": "A creative project currently under construction.",
-    "author": "James Y. Rauhut <james@seejamescode.com>",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/yepnamesjames/QuoteReact"
-    },
-    "bugs": {
-        "url": "https://github.com/yepnamesjames/QuoteReact/issues"
-    },
-    "dependencies": {
-        "gulp": "*",
-        "gulp-minify-css": "*",
-        "gulp-rename": "*",
-        "gulp-sass": "*",
-        "gulp-watch": "*",
-        "gulp-connect": "*",
-        "gulp-uglify": "*",
-        "gulp-replace": "*",
-        "gulp-minify-html": "*"
-    },
-    "analyze": true,
-    "license": "MIT"
+  "name": "QuoteReact",
+  "version": "0.0.1",
+  "description": "A creative project currently under construction.",
+  "author": "James Y. Rauhut <james@seejamescode.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yepnamesjames/QuoteReact"
+  },
+  "bugs": {
+    "url": "https://github.com/yepnamesjames/QuoteReact/issues"
+  },
+  "dependencies": {
+    "gulp": "*",
+    "gulp-cssnano": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-watch": "*",
+    "gulp-connect": "*",
+    "gulp-uglify": "*",
+    "gulp-replace": "*"
+  },
+  "analyze": true,
+  "license": "MIT"
 }

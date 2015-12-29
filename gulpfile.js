@@ -1,11 +1,10 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var minifycss = require('gulp-minify-css');
+var nano = require('gulp-cssnano');
 var rename = require('gulp-rename');
 var connect = require('gulp-connect');
 var uglify = require('gulp-uglify');
 var replace = require('gulp-replace');
-var minifyHTML = require('gulp-minify-html');
 
 gulp.task('images', function() {
     return gulp.src('images/**')
@@ -19,7 +18,7 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(gulp.dest('static/css'))
         .pipe(rename({suffix: '.min'}))
-        .pipe(minifycss())
+        .pipe(nano())
         .pipe(gulp.dest('production/css'))
 });
 
@@ -47,7 +46,7 @@ gulp.task('component_css', function() {
                      ])
         .pipe(gulp.dest('static/css'))
         .pipe(rename({suffix: '.min'}))
-        .pipe(minifycss())
+        .pipe(nano())
         .pipe(gulp.dest('production/css'));
 });
 
@@ -61,7 +60,6 @@ gulp.task('html', function() {
         .pipe(gulp.dest('static'))
         .pipe(replace('.css', '.min.css'))
         .pipe(replace('main.js', 'main.min.js'))
-        .pipe(minifyHTML(opts))
         .pipe(gulp.dest('production'))
 });
 

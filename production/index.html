@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <title>QuoteReact</title>
+        <meta name="Description" content="The perfect gif for the perfect quote." />
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-43808769-6', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+        <!-- Icons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+        <link rel="manifest" href="images/icons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico" />
+
+        <!-- Facebook Sharing -->
+        <meta property="og:type"               content="website" />
+        <meta property="og:title"              content="QuoteReact" />
+        <meta property="og:description"        content="The perfect gif for the perfect quote." />
+        <meta property="og:image"              content="http://seejamescode.com/projects/QuoteReact/images/sharepreview.jpg" />
+
+        <!-- Twitter Sharing -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="QuoteReact">
+        <meta name="twitter:description" content="The perfect gif for the perfect quote.">
+        <meta name="twitter:image" content="http://seejamescode.com/projects/QuoteReact/images/sharepreview.jpg">
+
+        <link rel="stylesheet" href="css/normalize.min.css" />
+        <link rel="stylesheet" href="css/main.min.css" />
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.min.js"></script>
+
+    </head>
+    <body>
+        <div class="page-wrap">
+            <header>
+                <h1>
+                    <span onclick="ga('send', 'event', 'Link', 'New Channel')">
+                        QuoteReact
+                    </span>
+                </h1>
+                <h2>The perfect gif for the perfect quote.</h2>
+                <h4>(JK, it is all random.)</h4>
+            </header>
+            <div id="wrapMain">
+                <div id="wrapQuote" class="firstRow">
+                    <h1 id="quote">[LOADING MAGIC]</h1>
+                </div>
+                <div id="wrapGif" class="firstRow">
+                    <img id="ears" src="./images/bunnyEars.svg">
+                    <br>
+                    <img id="gif" src="./images/static.gif">
+                </div>
+                <div id="nextAction">
+                    <button id="share" onclick="ga('send', 'event', 'Link', 'Share')">Copy to Share</button>
+                    <button id="next" onclick="ga('send', 'event', 'Link', 'New Channel')">Next Channel</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Created by <a href="http://www.seejamescode.com" target="_blank">James Y. Rauhut</a>. Copyright 2015. Powered by <a href="http://www.giphy.com" target="_blank">Giphy</a>.
+        </footer>
+    </body>
+</html>
